@@ -1,7 +1,13 @@
-const openJson = require("./jsonReader.js")
+const fs = require("fs");
 
 const facilities = (query = {}) => {
-  let data = openJson("mimaropa")
+  let data = [];
+
+  fs.readdirSync("./db").forEach(file => {
+    const contents = fs.readFileSync(`./db/${file}`, 'utf8');
+
+    data = data.concat(JSON.parse(contents))
+  })
 
   // Loop through keys in query
   for (const key in query) {
@@ -13,7 +19,7 @@ const facilities = (query = {}) => {
         }
 
         // check if d[key] is string
-        if(typeof d[key] == "string"){
+        if(typeof query[key] === "string" && typeof d[key] === "string"){
             return d[key].toLowerCase() == query[key].toLowerCase()
         }
 

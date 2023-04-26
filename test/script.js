@@ -2,7 +2,6 @@ const facilities = require("phil-nhfr")
 
 console.log(
   facilities({
-    "Province Name": "Palawan",
-    "Health Facility Type": "Infirmary",
+    "Region PSGC": 1900000000
   })
 )
