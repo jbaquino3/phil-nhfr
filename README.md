@@ -33,3 +33,13 @@ const data = facilities({
 })
 ```
 If the property does not exist, the function will throw an error.
+
+## Releasing
+Before releasing the package, add notable changes to the [changelog](CHANGELOG.md) file.
+```
+## [Unreleased]
+
+### Added
+- Changelog
+```
+To release the package, trigger the `Release package` workflow from the Actions tab.
