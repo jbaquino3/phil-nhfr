@@ -10,3 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - [Github Action](.github/workflows/release_package.yml) for Publishing to NPM
 - Documentation [README.md](README.md)
+
+## Fixed
+- Workflow error
