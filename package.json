@@ -1,15 +1,26 @@
 {
-  "name": "nhfr",
+  "name": "phil-nhfr",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library of National Health Facility Registry (NHFR) data for the Philippines.",
   "main": "index.js",
   "scripts": {
-    "start": "json-server db.json --routes routes.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbaquino3/phil-nhfr.git"
+  },
+  "keywords": [
+    "health",
+    "facility",
+    "philippines",
+    "data",
+    "library"
+  ],
+  "author": "John Israel Aquino",
   "license": "ISC",
-  "dependencies": {
-    "json-server": "^0.17.3"
-  }
+  "bugs": {
+    "url": "https://github.com/jbaquino3/phil-nhfr/issues"
+  },
+  "homepage": "https://github.com/jbaquino3/phil-nhfr#readme"
 }
