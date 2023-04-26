@@ -1,3 +1,8 @@
 const facilities = require("phil-nhfr")
 
-console.log(facilities({ "Barangay Name": "SAN MIGUEL (POB.)" }))
+console.log(
+  facilities({
+    "Province Name": "Palawan",
+    "Health Facility Type": "Infirmary",
+  })
+)
